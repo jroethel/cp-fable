@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Installs the Fable operating manual + learning-guide skill into a Claude config dir.
+# Installs the Fable operating manual into a Claude config dir.
 # Usage: ./install.sh [config-dir]   (default: ~/.claude)
 set -euo pipefail
 
@@ -9,8 +9,6 @@ DEST="${1:-$HOME/.claude}"
 [ -d "$DEST" ] || { echo "error: $DEST does not exist"; exit 1; }
 
 cp "$SRC/fable-manual.md" "$DEST/fable-manual.md"
-mkdir -p "$DEST/skills/learning-guide"
-cp "$SRC/skills/learning-guide/SKILL.md" "$DEST/skills/learning-guide/SKILL.md"
 
 CLAUDE_MD="$DEST/CLAUDE.md"
 IMPORT_LINE="@$DEST/fable-manual.md"
@@ -21,4 +19,4 @@ else
   echo "import already present in $CLAUDE_MD"
 fi
 
-echo "installed: $DEST/fable-manual.md, $DEST/skills/learning-guide/SKILL.md"
+echo "installed: $DEST/fable-manual.md"
