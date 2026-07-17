@@ -17,16 +17,22 @@ Reference example: `~/create/exp-know-capture/learning_guide.html`.
 - User preferences observed during the session get their own section so future sessions inherit them.
 - Concrete over abstract: name the actual fields, commands, files (`status`, `queue`, `70_Exports/`), not categories.
 - Dates absolute, never relative. No em dashes; use "-".
+- Updates allowed; skill can add/update learnings from a subsequent session. Note in the footnote what changed, and/or record new idea. 
+- If asked for a format reset, review and revise using skeleton and css below. 
 
 ## Section skeleton (adapt names, keep the shape)
 
-1. Architectural principles that emerged
-2. Design-process learnings
-3. User preferences (carry into future sessions)
-4. Key decisions register (table)
+1. Project summary and scope
+2. Architectural principles that emerged
+3. Design-process learnings
+4. User preferences (carry into future sessions)
+5. Key decisions register (table)
 5. Per-workstream sections as needed
-6. Operational learnings
-Footer: "Generated from the [date] [session type] (Claude Code + [user]). Companion docs live in ..."
+7. Operational learnings
+Footer: "Generated from the [date] [session type] ([Model] + [user]). Companion docs live in ..."
+
+8. Updates
+Footer: "Updated from the [date] [session type] ([Model] + [user]). "
 
 ## HTML skeleton
 
